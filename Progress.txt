@@ -1,0 +1,205 @@
+Ludum Dare 48h compo #30
+------------------------
+Total time during compo = 8.5 hours
+Total time post compo = 4 hours + ???
+
+23/08/2014 (7.5 hours)
+----------
+13:45 to
+14:10   Played around with a 2D sprite to figure out how to view it.
+14:15   Added the new Unity project to SVN.
+14:35   Added keyboard controls for sprite player. Player takes slow, measured steps (i.e. turn-based steps).
+14:50   Experimented with script variables, changing them in MonoDevelop vs the Unity Editor. Killed MonoDevelop when it misbehaved. Created an 8x8 monochrome sprite.
+15:10   Created another sprite. Added both sprites to Unity project. Created a Map object and script.
+15:35   Got map script generating tile objects in a grid to form a visual map.
+15:50   Created another sprite, and a tiny 3x3 map. The map is now displayed, although with gaps between tiles.
+16:30   Enlarged tiles to remove gap. Made camera follow player. Created a new player sprite.
+16:44   Created a new tile that is actually tileable across the map.
+17:15   Added collision detection between player and solid tiles. Each tile can be marked as solid or not.
+17:15 to
+18:00   Went grocery shopping. Put pizza in oven.
+18:10   Worked on map and tile artwork.
+18:10 to
+18:30   Ate pizza.
+18:45   Inverted one tile's colour to make the background black, and made it tileable.
+19:10   Setup two separate players, each with their own camera and map. For now they both move in sync on the same level layout.
+20:00   Made some tiles walkable to one player but solid to the other player. Made right player's tiles render upside-down.
+21:00   Made a lethal tile that kills either player, and a goal tile that transports either player to the next level.
+21:00 to
+21:20   Phoned Anna. Prepared cycling gear for tomorrow.
+22:00   Added sound effects for player death and reaching the goal.
+22:20   Added more levels. Changed logic so that both players die when one touches a lethal tile, and both must touch a goal to move to the next level.
+22:40   Created more levels, including some introductory levels.
+23:00   Created and play-tested more levels.
+
+24/08/2014 (1 hour)
+----------
+19:50 to
+20:05   Tried to workout the minimum I can work on to 'finish' the game for the compo. Commented out broken levels, and put levels into difficulty order.
+20:05 to
+21:45   Dinner, dessert and TV with Anna.
+21:45 to
+22:10   Created a trivial starting level, and a final level.
+22:20   Removed the annoying background music.
+22:50   Submitted to the Ludum Dare website, with description and screenshots.
+
+
+POST-COMPO
+==========
+
+04/09/2014 (1 hour)
+----------
+20:05 to
+20:15   Seemed to break the Unity project. Figured out how to load up the correct scene.
+20:20   Darkened the background from white to grey.
+20:40   Created new sound effects to replace existing warp and die sounds. Also created a walk and wall bump sound.
+20:55   Added these sounds to the game, and tested them. Made the walk sound softer. Slowed down the walk speed so that the wall bump does not play too frequently.
+21:00   Built a post-compo web build, and added it to SVN and Dropbox. Tested the Dropbox version online.
+
+21/10/2014 (3 hours)
+----------
+19:00 to
+19:10   Tested existing levels with an eye towards the level border preventing both avatars from moving.
+19:30   Started coding super level border, but realised it requires syncing both players! Resorted to cloning some levels, with actual lethal tiles on the boundary.
+20:10   Realised that the players start position is hard-coded. Created a tile char to represent the start, and made the players start at it.
+20:10 to
+21:00   Ate dinner, and tried to fix my Silverlight games on GameJolt!
+21:10   Prevented diagonal player movement
+22:00   Tested cloned lethal levels, and fixed levels that became impossible due to lethal tiles.
+22:30   Built for Android and tested on my S3 phone.
+23:00   Uploaded Unity web build to GameJolt, and tested it.
+23:20   Attempted to upload Android build to Google Play store. Realised that build is signed with a debug key. Postponing to another day.
+
+22/10/2014
+----------
+22:00 to
+22:45   Signed Android build with a new signing key to get it onto the Google Play Store
+
+23/10/2014
+----------
+19:30 to
+20:20   Cropped and resized screenshots to create promo images and icons for Google Play Store and Amazon App Store.
+20:40   Filled in other details, and published this game on both Google Play Store and Amazon App Store.
+
+25/10/2014
+----------
+09:30 to
+09:50   Paused very slow anti-virus scanning, and started using ViewSonic monitor with laptop.
+14:00   Laptop continued being very slow! Had to reboot it! I spent the rest of the weekend trying to speed up my laptop!
+
+29/10/2014
+----------
+19:40 to
+20:10   Ate dinner and brainstormed new game features
+20:30   Read docs about Unity animation systems, and experimented with legacy animation
+20:45   Made players move in a smooth animation
+21:15   Fought with Unity GUI system. Could not make it work.
+21:40   Fixed a bug in the player movement animation
+
+02/11/2014
+----------
+12:30 to
+13:15   Read up about Unity Ads thresholds and payment methods, rediscovered how to login to Unity Ads website, and signed up for regular emails on revenue.
+13:15 to
+14:30   Ate lunch and read up on Unity advertising.
+14:35   Switched landscape orientation and inverted loading indicator. Changed app name and bumped version number.
+15:00   Experimented with advert freeze bug. Worked around it by not pausing game during advert. Now show adverts between levels.
+15:15   Searched for an unused game name in Play Store. Settled for "Fatal Swipe".
+15:30   Added perma-death, resetting player to first level. Now also shows an advert after each death.
+15:45   Trimmed first two levels down to smaller size to avoid boredom of swiping lots on levels without tension.
+15:55   Increased touch sensitivity, so shorter swipes move player.
+16:05   Fixed broken level D2 and integrated into game.
+16:10   Changed background colour to black to match floor tiles.
+16:10 to
+17:00   Tested on both of my Android devices. Adverts sometimes crash the app on my Android tablet.
+17:20   Had a shower
+17:50   Added UK English 'translation' of US English to Play Store listing. Tried to publish latest version of game.
+18:45   Published latest build of game on Play Store and Amazon Store.
+
+04/11/2014
+----------
+21:30 to
+23:30   Made level editing easier by allowing tiles to be represented by arbitrary characters. Switched to a better set of characters, and converted half of the levels.
+
+06/11/2014
+----------
+19:15 to
+19:30   Read up about integrating Facebook into Unity Android games. Registered as a Facebook Developer, and started registering a new Android App on Facebook Developer website.
+19:45   Got stuck registering App on Facebook due to missing Key Hash. Imported Facebook SDK into Unity for my game (took a while).
+20:20   Tried to edit the App Name and App Id in the FacebookSettings in Unity (very unresponsive!). Attempted to generate a Debug Key Hash for the App Registration.
+20:20 to
+22:30   Dinner and TV
+23:00   Tried out sample Facebook UI in Unity Editor.
+
+08/11/2014
+----------
+08:00 to
+08:10   Experimented with generating random music procedurally on a website. Result was so-so, and a MIDI file, not supported by Unity.
+08:25   Found some old freeware music (DST-DoomNGloom.mp3) and made it loop in the background in the game.
+08:44   Had a look at the Facebook sample console in Unity.
+09:00   Started writing code to initialise Facebook engine from the game.
+* AFK *
+11:40 to
+13:00   Hacked some more with Facebook integration. Messed about a bit.
+13:30   Signed up to a new DropBox account. Switched laptop, Android phone and tablet over to using new DropBox account. Tested game on devices.
+14:00   Noticed on phone that I had forgotten to log user into Facebook. Fixed this.
+* AFK *
+15:05 to
+15:35   Tested Facebook functionality on Android devices. Tried to add release hash to Facebook settings, but was rejected.
+16:20   Got posting to Facebook working from game, posting dummy text and link!
+17:30   Added button with Facebook icon for posting. Posting now works, and includes a caption, description and screenshot!
+18:00   Checked the many, many files in the Facebook SDK into SVN
+19:00   Finished converting all levels to new character set. Changed app icon to the pink tile (with transparent background).
+
+27/11/2014
+----------
+19:30 to
+19:45	Tested out game in Unity on Windows 8. Discovered that same 3 tile prefabs are broken again (Win7 vs Win8 issue?)
+20:00	Wasted time trying to play music to code to, on iPad and in desktop browser.
+20:40	Added scoring which increases at the end of each level. Tried to post to Facebook after player death, but Facebook issues on Win8.
+
+
+TODO
+----
+Build better levels.
+Change the game play to be more interesting.
+Prevent player using level border to move other player? i.e. when one player collides with the border, neither player moves!
+Artwork - make this less ugly!
+
+ANDROID KEY HASHES
+------------------
+Debug Android Key Hash (shown by Unity Editor): [redacted]
+Release Android Key Hash (detected by Facebook): [redacted]
+
+POSSIBLE GAME NAMES
+-------------------
+Experimental Game #1
+Work Together
+Swipe To Die
+Last Swipe
+Fatal Move
+Fatal Swipe   ***
+
+APP STORE DESCRIPTIONS
+----------------------
+Title: Fatal Swipe
+
+Short description: Two doppelgangers in different dimensions, forever moving in lock-step...
+
+Product feature bullets:
+• Turn based puzzle/strategy game
+• Retro art style
+• Easy levels quickly give way to fiendishly difficult levels
+• Permadeath results in a brutal and punishing difficulty curve!
+• You only see adverts if you lose!
+
+Keywords: best, brain, brutal, challenging, color, colour, difficult, exciting, fun, game, games, hard, minimal, minimalist, perma-death, permadeath, punishing, puzzle, retro, smart, turn-based, turnbased
+
+Long description:
+Two doppelgangers in different dimensions, forever moving in lock-step. But is everything as it seems?
+
+A puzzle game with perma-death. Swipe up, down, left or right to move in each direction. Experiment with the blocks that you discover, and find the exit to each level.
+
+Originally created in about eight hours for the Ludum Dare 48 hour game competition, and then improved from there.
+
+NOTE: this is a free game with no in-app purchases, but it does contain some adverts.
